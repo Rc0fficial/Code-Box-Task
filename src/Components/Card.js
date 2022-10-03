@@ -1,13 +1,13 @@
 import React from 'react'
 
-function Card() {
+function Card(props) {
   return (
     <div>
          <section className="container mx-auto flex flex-wrap">
     <div className="lg:w-1/3 md:w-1/2 w-full p-4 ">
         <div className="p-8 rounded-xl border border-gray-200 bg-white">
-            <h4> Package Pricing (with border) </h4>
-            <h5 className="text-5xl font-bold py-2 text-gray-500"> $9.99<small className="text-lg">/mo</small></h5>
+            <h4> {props.title} </h4>
+            <h5 className="text-5xl font-bold py-2 text-gray-500"> {props.price} <small className="text-lg">/mo</small></h5>
             <hr/>
             <div className="my-4 flex flex-col text-base items-center">
                 <p className="flex items-center w-full my-1"><svg className="mr-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
@@ -27,8 +27,8 @@ function Card() {
     </div>
     <div className="lg:w-1/3 md:w-1/2 w-full p-4 ">
         <div className="p-8 rounded-xl bg-white">
-            <h4> Package Pricing (without border) </h4>
-            <h5 className="text-5xl font-bold py-2 text-gray-500"> $9.99<small className="text-lg">/mo</small></h5>
+            <h4> {props.title} </h4>
+            <h5 className="text-5xl font-bold py-2 text-gray-500"> {props.price} <small className="text-lg">/mo</small></h5>
             <hr/>
             <div className="my-4 flex flex-col text-base items-center">
                 <p className="flex items-center w-full my-1"><svg className="mr-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">
@@ -48,8 +48,8 @@ function Card() {
     </div>
     <div className="lg:w-1/3 md:w-1/2 w-full p-4 ">
         <div className="p-8 rounded-xl shadow-md bg-white">
-            <h4> Package Pricing (with shadow) </h4>
-            <h5 className="text-5xl font-bold py-2 text-gray-500"> $9.99<small className="text-lg">/mo</small></h5>
+            <h4> {props.title} </h4>
+            <h5 className="text-5xl font-bold py-2 text-gray-500"> {props.price} <small className="text-lg">/mo</small></h5>
             <hr/>
             <div className="my-4 flex flex-col text-base items-center">
                 <p className="flex items-center w-full my-1"><svg className="mr-2 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewbox="0 0 16 16">

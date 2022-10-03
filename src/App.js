@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Card/>
+    <Card title="Package Pricing (without border)" price="$9.99"/>
     </div>
   );
 }
